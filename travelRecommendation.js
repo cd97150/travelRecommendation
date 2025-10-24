@@ -15,7 +15,7 @@ function fetchResults(event) {
                     console.log(country);
                     country.cities.forEach(city => {
                         const result = document.getElementById('result');
-                        //afficher tout les resultats
+                        //afficher tout les resultats 
                         result.innerHTML += `<article><h3>${city.name}</h3><p>${city.description}</p><button class="btn-green">Visit<button></article>`
                     });
                 }
@@ -34,3 +34,12 @@ function fetchResults(event) {
 
 document.getElementById('btnSearch').addEventListener('click', fetchResults);
 
+
+function clearResults(event) {
+    const dest = document.getElementById('destination');
+    const result = document.getElementById('result');
+    dest.value= "";
+    result.innerHTML = "";
+}
+
+document.getElementById('btnClear').addEventListener('click', clearResults);
