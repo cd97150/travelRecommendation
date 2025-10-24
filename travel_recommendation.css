@@ -60,6 +60,7 @@ nav {
 
 nav ul {
     display: flex;
+    margin-right: 5px;
     gap: 1em;
 }
 
@@ -101,8 +102,19 @@ nav ul li a:hover {
     outline: none;
 }
 
-
-
+/* home resultat country*/
+.right.researchResult{
+    width: 50%;
+}
+#result article{
+        background-color: #8080807a;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#result article h3{
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 /* main */
 /* modele */
 /* 2 parties  */
@@ -131,13 +143,18 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
-.content {
+.content.main-page{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+
 }
 
+.content.main-page .left{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .content p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -177,9 +194,7 @@ nav ul li a:hover {
     font-weight: 900;
 }
 
-.content.main-page {
-    max-width: 500px;
-}
+
 
 /* about-us, contact-us */
 
