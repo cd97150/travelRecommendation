@@ -10,6 +10,7 @@ body {
     color: white;
     margin: 0 auto;
     font-family: fantasy;
+    background-color: var(--navbar);
 }
 
 * {
@@ -50,12 +51,15 @@ h1 {
 }
 
 nav {
+    z-index: 10000;
+    position: relative;
     background-color: var(--navbar);
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* overflow: hidden; */
+    border-bottom: 1px solid white;
+    box-shadow: 0px 0px 0px 2px white
 }
 
 nav ul {
@@ -102,11 +106,12 @@ nav ul li a:hover {
     color: var(--green-color);
     outline: none;
 } */
-#destination{
- border: none;
+#destination {
+    border: none;
     color: var(--green-color);
     outline: none;
 }
+
 /* home resultat country*/
 .right.researchResult {
     width: 50%;
@@ -136,6 +141,8 @@ nav ul li a:hover {
     background:
         linear-gradient(to right, var(--green-dark-color), rgba(64, 224, 208, 0) 70%),
         url("./images/home.png") center/cover no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .container.a-us {
@@ -294,7 +301,7 @@ form textarea {
     margin-bottom: 5px;
 }
 
-.no-result{
+.no-result {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,3 +309,6 @@ form textarea {
     background-color: var(--green-dark-color-bg)
 }
 
+#result article img {
+    max-height: 50vh;
+}
