@@ -1,6 +1,7 @@
 :root {
     --green-color: #5eadb3;
-    --navbar: #436361;
+    --green-dark-color: #2e5a5d;
+    --navbar: #162627;
 }
 
 body {
@@ -21,7 +22,8 @@ img {
     object-fit: cover;
 }
 
-button {
+button,
+.network img {
     cursor: pointer;
 }
 
@@ -31,6 +33,11 @@ button {
     margin: 10px;
     width: 50px;
     height: 50px;
+}
+
+.search-bar img {
+    width: 15px;
+    height: 15px;
 }
 
 h1 {
@@ -44,7 +51,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 nav ul {
@@ -60,28 +67,90 @@ nav ul li a:hover {
     color: var(--green-color);
 }
 
+.btn-green {
+    background-color: var(--green-color);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.btn-green:hover {
+    background-color: var(--navbar);
+}
 
 /* searchbar */
 .search-bar {
     padding: 10px;
     border-radius: 50px;
     background-color: white;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    gap: 10px
 }
 
 #conditionInput {
     border: none;
     color: var(--green-color);
+    outline: none;
 }
 
-.search-bar button {
-    background-color: var(--green-color);
-    border: none;
+
+
+/* main */
+/* modele */
+/* 2 parties  */
+
+.container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+    background:
+        linear-gradient(to right, var(--green-dark-color), rgba(64, 224, 208, 0) 70%),
+        url("./images/home.png") center/cover no-repeat;
+}
+
+.container h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+/* mainpage */
+.bar {
+    border: 1px solid white;
+    width: 1px;
+    height: 150px;
     color: white;
-    border-radius: 15px;
-    padding: 5px;
 }
 
-.search-bar button:hover {
-    background-color: var(--navbar);
+.net {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.network {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.network img {
+    width: 25px;
+    height: 25px;
+}
+
+.container .btn-green {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.content.main-page {
+    max-width: 500px;
 }
