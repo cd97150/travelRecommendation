@@ -193,6 +193,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-around;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 .about-us h2 {
@@ -227,6 +228,7 @@ nav ul li a:hover {
 
 .about-us .contact {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -239,4 +241,26 @@ nav ul li a:hover {
 .ct {
     display: flex;
     align-items: center
+}
+
+/* contact-us */
+.contact-us{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-us .right{
+    width: 50%;
+}
+form{
+    background-color: var(--art);
+    padding: 20px;
+    width: 100%;
+}
+form input, form textarea{
+    width:100%;
+    margin-bottom: 5px;
 }
