@@ -1,7 +1,9 @@
 :root {
     --green-color: #5eadb3;
     --green-dark-color: #2e5a5d;
+    --green-dark-color-bg: #2e5a5da7;
     --navbar: #162627;
+    --art: #1626277a;
 }
 
 body {
@@ -14,6 +16,8 @@ body {
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -114,10 +118,32 @@ nav ul li a:hover {
         url("./images/home.png") center/cover no-repeat;
 }
 
+.container.a-us {
+    background:
+        linear-gradient(to right, var(--green-dark-color-bg) 70%, rgba(64, 224, 208, 0) 100%),
+        url("./images/home.png") center/cover no-repeat;
+
+}
+
 .container h2 {
     text-transform: uppercase;
     font-size: 48px;
     font-weight: 500;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content button {
+    width: fit-content;
 }
 
 /* mainpage */
@@ -153,4 +179,64 @@ nav ul li a:hover {
 
 .content.main-page {
     max-width: 500px;
+}
+
+/* about-us, contact-us */
+
+.about-us,
+.contact-us {
+    flex-direction: column;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-us h2 {
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+
+.contact-block {
+    display: flex;
+    gap: 20px;
+}
+
+.about-us article {
+    font-size: 16px;
+    background-color: var(--art);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.about-us article button {
+    width: 100%;
+}
+
+.about-us article img {
+    width: 25px;
+    height: 25px;
+}
+
+.about-us .contact {
+    display: flex;
+    gap: 20px;
+}
+
+.about-us .contact h3 {
+    font-size: 24px;
+    font-family: fantasy;
+    text-transform: uppercase;
+}
+
+.ct {
+    display: flex;
+    align-items: center
 }
