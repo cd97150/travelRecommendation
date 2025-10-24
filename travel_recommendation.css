@@ -93,28 +93,36 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     outline: none;
-    gap: 10px
+    gap: 10px;
+    margin-right: 10px;
 }
 
-#conditionInput {
+/* #conditionInput {
     border: none;
     color: var(--green-color);
     outline: none;
+} */
+#destination{
+ border: none;
+    color: var(--green-color);
+    outline: none;
 }
-
 /* home resultat country*/
-.right.researchResult{
+.right.researchResult {
     width: 50%;
 }
-#result article{
-        background-color: #8080807a;
+
+#result article {
+    background-color: #8080807a;
     padding: 10px;
     margin-bottom: 20px;
 }
-#result article h3{
+
+#result article h3 {
     font-size: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 /* main */
 /* modele */
 /* 2 parties  */
@@ -143,18 +151,20 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
-.content.main-page{
+.content.main-page {
     display: flex;
     justify-content: space-between;
 
 }
 
-.content.main-page .left{
+.content.main-page .left {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
     flex-direction: column;
 }
+
 .content p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -167,7 +177,7 @@ nav ul li a:hover {
 .bar {
     border: 1px solid white;
     width: 1px;
-    height: 150px;
+    height: 39%;
     color: white;
 }
 
@@ -208,7 +218,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-around;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
 }
 
 .about-us h2 {
@@ -259,7 +269,7 @@ nav ul li a:hover {
 }
 
 /* contact-us */
-.contact-us{
+.contact-us {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -267,15 +277,28 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.contact-us .right{
+
+.contact-us .right {
     width: 50%;
 }
-form{
+
+form {
     background-color: var(--art);
     padding: 20px;
     width: 100%;
 }
-form input, form textarea{
-    width:100%;
+
+form input,
+form textarea {
+    width: 100%;
     margin-bottom: 5px;
 }
+
+.no-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: var(--green-dark-color-bg)
+}
+

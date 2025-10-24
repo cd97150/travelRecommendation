@@ -28,7 +28,7 @@ function fetchResults(event) {
             });
             // Si rien n'est trouvé
             if (result.innerHTML === "") {
-                result.innerHTML = `<p>No results found for "${dest}"</p>`;
+                result.innerHTML = `<div class="no-result"><p>No results found for "${dest}"</p><div>`;
             }
         })
         .catch(error => {
