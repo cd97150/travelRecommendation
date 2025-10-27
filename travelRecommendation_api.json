@@ -43,7 +43,7 @@
                 },
                 {
                     "name": "São Paulo, Brazil",
-                    "imageUrl": "/images/sao.png",
+                    "imageUrl": "./images/sao.png",
                     "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
                 }
             ]
@@ -53,13 +53,13 @@
         {
             "id": 1,
             "name": "Angkor Wat, Cambodia",
-            "imageUrl": "/images/angkor-wat.png",
+            "imageUrl": "./images/angkor-wat.png",
             "description": "A UNESCO World Heritage site and the largest religious monument in the world."
         },
         {
             "id": 2,
             "name": "Taj Mahal, India",
-            "imageUrl": "/images/taj-mahal.png",
+            "imageUrl": "./images/taj-mahal.png",
             "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
         }
     ],

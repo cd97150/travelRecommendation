@@ -89,7 +89,10 @@ nav ul li a:hover {
 }
 
 /* searchbar */
+
 .search-bar {
+    display: flex;
+    align-items: center;
     padding: 10px;
     border-radius: 50px;
     background-color: white;
@@ -98,14 +101,30 @@ nav ul li a:hover {
     justify-content: center;
     outline: none;
     gap: 10px;
-    margin-right: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
 }
 
-/* #conditionInput {
-    border: none;
-    color: var(--green-color);
-    outline: none;
-} */
+/* input petit par défaut */
+.search-bar input {
+    background-color: transparent;
+    width: 150px;
+    /* largeur initiale */
+    padding: 5px 10px;
+    transition: width 0.3s ease;
+    /* animation fluide */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* tronque le texte avec "..." si trop long */
+}
+
+/* quand on focus (clic ou tape) */
+.search-bar input:focus {
+    width: 300px;
+    /* largeur agrandie */
+}
+
 #destination {
     border: none;
     color: var(--green-color);
@@ -113,9 +132,7 @@ nav ul li a:hover {
 }
 
 /* home resultat country*/
-.right.researchResult {
-    width: 50%;
-}
+
 
 #result article {
     background-color: #8080807a;
@@ -171,7 +188,9 @@ nav ul li a:hover {
     gap: 20px;
     flex-direction: column;
 }
-
+.content.main-page .right {
+    width: 50%;
+}
 .content p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -235,6 +254,7 @@ nav ul li a:hover {
 
 .contact-block {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -311,4 +331,52 @@ form textarea {
 
 #result article img {
     max-height: 50vh;
+}
+
+
+/* media queries */
+
+/* navbar search */
+
+@media screen and (max-width:992px) {
+    nav {
+        flex-wrap: wrap;
+        height: unset;
+        justify-content: center;
+        gap: 15px;
+        padding-bottom: 10px;
+
+    }
+
+    .content.main-page {
+        flex-wrap: wrap;
+    }
+
+    .content.main-page .left,
+    .content.main-page .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .search-bar input {
+        flex-wrap: wrap;
+        width: 55px;
+        /* largeur initiale */
+        padding: 5px 10px;
+        transition: width 0.3s ease;
+        /* animation fluide */
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        /* tronque le texte avec "..." si trop long */
+    }
+
+    .search-bar input:focus {
+
+        width: 100%;
+        white-space: normal;
+    }
+
+
 }
